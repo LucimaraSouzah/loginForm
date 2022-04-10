@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsivo.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="screen">
+      <div class="content-left">
+        <div class="logo">
+          <img src="images/logo.svg" />
+        </div>
+        <div class="login-body">
+          <div class="login-index">
+            <div class="login-box">
+              <img class="login-img" src="images/log-in.svg" />
+              <h1 class="login-title">Faça seu login</h1>
+            </div>
+            <p class="login-desc">Entre com suas informações de cadastro.</p>
+          </div>
+          <div class="email">
+            <label class="box-email">
+              <span class="text-email">E-mail</span>
+              <div class="email-block">
+                <input
+                  id="field_email"
+                  class="input-email"
+                  type="email"
+                  placeholder="Digite seu e-mail"
+                />
+              </div>
+            </label>
+          </div>
+            <div class="password">
+              <label class="box-password">
+                <span class="text-password">Senha</span>
+                <div class="password-block">
+                  <input
+                    id="field_password"
+                    class="input-password"
+                    type="password"
+                    placeholder="Digite sua senha"
+                  />
+                </div>
+              </label>
+            </div>
+              <div class="remember">
+                <label class="title-remember">
+                    <input class="box-remember" type="checkbox" />
+                    <div class="box-check"></div>
+                    <span class="text-remember">Lembre-me</span>
+                </label>
+                <span class="forgot">Esqueci minha senha</span>
+              </div>
+              <div class="footer">
+              <button class="button" onclick="logar()">ENTRAR</button>
+              <span class="register">Não tem uma conta? <b>Registre-se</b> </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-right"></div>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>

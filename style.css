@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.screen {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+.content-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  width: 50%;
+  height: 100vh;
+}
+
+.logo {
+  display: flex;
+  align-self: baseline;
+  position: absolute;
+  left: 10px;
+  margin: 15px;
+}
+
+.login-body {
+  background-color: var(--form-background);
+}
+
+.login-index {
+  display: flex;
+  flex-direction: column;
+  margin: 60px 100px 20px 100px;
+}
+
+.login-box {
+  display: flex;
+}
+
+.login-img {
+  margin-right: 10px;
+}
+
+.login-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--text-title);
+  font-size: 22px;
+}
+
+.login-desc {
+  color: var(--text-base);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.email,
+.password {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-email,
+.box-password {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 100px 20px 100px;
+}
+
+.text-email,
+.text-password {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: var(--text-base);
+  margin-bottom: 10px;
+}
+
+.email-block,
+.password-block {
+  display: flex;
+  align-items: center;
+}
+
+.input-email {
+  background-color: var(--form-background);
+  background-image: url(images/mail.svg);
+  background-repeat: no-repeat;
+  background-position: 5px;
+  border: 1px solid var(--text-base);
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--text-base);
+  padding-left: 30px;
+  width: 100%;
+}
+
+.input-password {
+  background-color: var(--form-background);
+  background-image: url(images/lock.svg);
+  background-repeat: no-repeat;
+  background-position: 5px;
+  border: 1px solid var(--text-base);
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--text-base);
+  padding-left: 30px;
+  width: 100%;
+}
+
+.input-email:focus {
+  background-image: url(images/mail-focus.svg);
+}
+
+.input-password:focus {
+  background-image: url(images/lock-focus.svg);
+}
+
+.input-email::placeholder,
+.input-password::placeholder {
+  color: var(--text-base);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.input-email:focus-within,
+.input-password:focus-within {
+  box-shadow: 0px 0px 2px 1px var(--primary-color);
+  border: 1px solid var(--primary-color);
+  outline: 0;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 100px 20px 100px;
+}
+
+.box-check {
+  border: solid 1px var(--text-base);
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #24221f;
+}
+
+.box-remember {
+  display: none;
+}
+.box-remember:checked + div {
+  border: solid 2px transparent;
+  background-color: #ffc632;
+  background-image: url("images/check.svg");
+  background-position: center center;
+}
+
+.title-remember {
+  display: flex;
+}
+
+.text-remember {
+  color: var(--text-base);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.forgot {
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.content-right {
+  width: 50%;
+  height: 100vh;
+  background-image: url(images/side-image.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  margin: 0px 100px 20px 100px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.register {
+  margin: 0px 100px 20px 100px;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
